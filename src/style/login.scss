@@ -1,0 +1,92 @@
+.page-login {
+    width: 100%;
+    display: flex;
+    .login-logo {
+        width: 50%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 18.58rem;
+        }
+    }
+    .login-main {
+        width: 50%;
+        height: 100vh;
+        background-color: #F0F2F5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .login-box {
+            width: 348px;
+            margin-left: -100px;
+        }
+        .login-btns {
+            padding-left: 100px;
+            font-size: 16px;
+            margin-bottom: 40px;
+            color: #9C9DA1;
+            span {
+                cursor: pointer;
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+            span:nth-child(2n+1) {
+                padding-right: 16px;
+                border-right: 1px solid #22252A;
+            }
+            span:nth-child(2n) {
+                padding-left: 20px;
+            }
+        }
+        .btn-forget {
+            color: #41BAC4;
+            margin-left: 100px;
+            margin-top: -6px;
+            margin-bottom: 32px;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+        .active {
+            color: #41BAC4;
+        }
+        .el-button--primary {
+            width: 173px;
+            background: #22252A;
+            border-color: #22252A;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+        .el-form-item__content {
+            position: relative;
+        }
+        .btn-countdown {
+            position: absolute;
+            right: 0;
+            font-size: 10px;
+            color: #22252A;
+            cursor: pointer;
+        }
+        .btn-gray {
+            color: #606266;
+        }
+        .input-validate {
+            position: relative;
+            .el-input__suffix {
+                display: none;
+            }
+        }
+    }
+}
+.input-noborder .el-input__inner {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid;
+    background-color: transparent;
+    padding: 0;
+}

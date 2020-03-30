@@ -1,0 +1,148 @@
+.chuck-table {
+    padding: 2.33rem 4.25rem 0 4.25rem;
+    .header-left {
+        font-size: 1.5rem;
+        color: #41BAC4;
+        width: 4.5rem;
+        padding: 1.34rem 0 0 2.08rem;
+        vertical-align: top;
+    }
+    .header-right {
+        max-width: 41.81rem;
+        min-width: 35rem;
+        text-align: center;
+        margin-left: 3.38rem;
+        p {
+            color: #D3D3D3;
+            font-size: 1.33rem;
+            padding-bottom: 0.79rem;
+            border-bottom: 0.08rem solid #3B3E42;
+        }
+        .table-header {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.88rem 2.18rem 0 4.21rem;
+            color: #C44A41;
+            font-size: 1.17rem;
+            span:nth-child(2n) {
+                color: #58B85B;
+            }
+        }
+    }
+    th, td {
+        font-size: 1.17rem;
+        text-align: center;
+        line-height: 2.17rem;
+        border: none;
+        border: none;
+        padding: 0.18rem;
+    }
+    .el-table {
+        border: none;
+    }
+    .el-table--enable-row-hover .el-table__body tr:hover>td {
+        background-color: transparent;
+    }
+    .el-table th, .el-table tr, .el-table thead.is-group th {
+        background-color: #282B2F;
+    }
+    .el-table--striped .el-table__body tr.el-table__row--striped td {
+        background: #333438;
+    }
+    .el-table td, .el-table th.is-leaf,.el-table--border, .el-table--group{
+      border-color: #282B2F;
+    }
+    .header-border {
+        border-bottom: 0.08rem solid #3B3E42;
+    }
+    .el-table--border, .el-table--group {
+        border: none;
+    }
+    .el-table__header-wrapper th:nth-last-of-type(2) {
+        border: none;
+    }
+    .el-table--border td:nth-last-of-type(1) {
+        border: none;
+    }
+    .el-table--border::after, .el-table--group::after {
+        width: 0;
+    }
+    .el-table::before {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 0px;
+    }
+    .label-class {
+        font-size: 1.5rem;
+        color: #41BAC4;
+    }
+    .label-class-item {
+        color: #aaa;
+    }
+    .el-table__body-wrapper {
+        background-color: #282B2F;
+    }
+}
+.price-table {
+    padding: 2.67rem 6.25rem;
+    th, td {
+        font-size: 1.17rem;
+        text-align: center;
+        line-height: 2.17rem;
+    }
+    th {
+        font-size: 1.5rem;
+        width: 3rem;
+        padding-bottom: 2.83rem;
+    }
+}
+.row-title, .item-price, .item-gray {
+    color: #AAA;
+}
+.round-red {
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background-color: #C44A41;
+    margin: 0 auto;
+}
+.round-green {
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background-color: #58B85B;
+    margin: 0 auto;
+}
+.round-gray {
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background-color: #D3D3D3;
+    margin: 0 auto;
+}
+.item-red {
+    color: #C44A41;
+}
+.item-green {
+    color: #58B85B;
+}
+.item-blue {
+    color: #39BAC5;
+}
+@media screen and (min-width: 1440px) {
+    .chuck-table {
+        width: 60.83rem;
+    }
+}
+@media screen and (max-width: 1440px) {
+    .chuck-table, .price-table {
+        padding: 2.33rem 1.25rem 0 1.25rem;
+    }
+}
